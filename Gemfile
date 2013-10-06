@@ -31,6 +31,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#fix issue Undefined variable: "$c_green"
+gem 'compass'
+gem 'compass-rails'
+
+#necessary for spree_i18n (translation tool)
+gem 'globalize3', github: 'svenfuchs/globalize3', branch: 'rails4'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -48,7 +55,12 @@ gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :bran
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-1-stable'
 gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-1-stable'
 gem "spree_social", :git => "git://github.com/spree/spree_social.git", :branch => '2-1-stable'
+gem 'spree_i18n', github: 'spree/spree_i18n', :branch => '2-1-stable'
+
 
 group :development, :test do
-	gem 'sqlite3'
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
 end

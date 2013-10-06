@@ -10,6 +10,15 @@ GIT
       spree_core (~> 2.1.0)
 
 GIT
+  remote: git://github.com/spree/spree_i18n.git
+  revision: a65a6f3d3c1426265811091ee5761f0efa809fc9
+  branch: 2-1-stable
+  specs:
+    spree_i18n (3.0.0)
+      rails-i18n (~> 0.7.3)
+      spree_core (~> 2.1.0)
+
+GIT
   remote: git://github.com/spree/spree_social.git
   revision: 48d59625b2bcc9692acea5500a16b3504fdbc242
   branch: 2-1-stable
@@ -22,6 +31,16 @@ GIT
       omniauth-google-oauth2
       omniauth-twitter
       spree_core (~> 2.1.0)
+
+GIT
+  remote: git://github.com/svenfuchs/globalize3.git
+  revision: 82b3b36308677745b261bd147dda00ed4560a25d
+  branch: rails4
+  specs:
+    globalize3 (0.3.0)
+      activemodel (>= 4.0.0)
+      activerecord (>= 4.0.0)
+      paper_trail (~> 3.0.0.beta)
 
 GIT
   remote: https://github.com/spree/spree_auth_devise.git
@@ -174,8 +193,6 @@ GEM
     multi_json (1.8.1)
     multi_xml (0.5.5)
     multipart-post (1.2.0)
-    nokogiri (1.6.0)
-      mini_portile (~> 0.5.0)
     nokogiri (1.6.0-x86-mingw32)
       mini_portile (~> 0.5.0)
     nori (1.1.5)
@@ -208,6 +225,8 @@ GEM
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
     orm_adapter (0.4.0)
+    paper_trail (3.0.0.beta1)
+      activerecord (>= 3.0, < 5.0)
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
@@ -216,6 +235,7 @@ GEM
       mime-types
     paranoia (2.0.0)
       activerecord (~> 4.0)
+    pg (0.17.0-x86-mingw32)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.3)
@@ -232,6 +252,8 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.0)
       sprockets-rails (~> 2.0.0)
+    rails-i18n (0.7.4)
+      i18n (~> 0.5)
     railties (4.0.0)
       actionpack (= 4.0.0)
       activesupport (= 4.0.0)
@@ -354,8 +376,12 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  compass
+  compass-rails
+  globalize3!
   jbuilder (~> 1.2)
   jquery-rails
+  pg
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc
@@ -363,6 +389,7 @@ DEPENDENCIES
   spree_auth_devise!
   spree_fancy!
   spree_gateway!
+  spree_i18n!
   spree_social!
   sqlite3
   turbolinks
