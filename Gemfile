@@ -64,6 +64,9 @@ gem 'spree_reviews', github: 'spree/spree_reviews', :branch => '2-1-stable'
 #group :development, :test do
 #  gem 'sqlite3'
 #end
+
+#fix heroku
+gem 'rails_12factor'#, group: :production
 #group :production do
 #  gem 'pg'
 #end

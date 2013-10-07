@@ -28,4 +28,4 @@ production:
   pool: 5
   username: Chris
   password: schweine1
-  host: localhost
+#  host: localhost
