@@ -18,7 +18,9 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-
+# database gem for convertion sqlite3 to postgresql
+gem 'yaml_db'
+gem 'pg'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -56,11 +58,12 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-1-stable'
 gem "spree_social", :git => "git://github.com/spree/spree_social.git", :branch => '2-1-stable'
 gem 'spree_i18n', github: 'spree/spree_i18n', :branch => '2-1-stable'
+gem 'spree_reviews', github: 'spree/spree_reviews', :branch => '2-1-stable'
 
 
-group :development, :test do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
+#group :development, :test do
+#  gem 'sqlite3'
+#end
+#group :production do
+#  gem 'pg'
+#end
