@@ -3,7 +3,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: blog_development
+  database: farmfood_development
   pool: 5
   username: Chris
   password: schweine1
@@ -15,7 +15,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: blog_test
+  database: farmfood_test
   pool: 5
   username: Chris
   password: schweine1
@@ -24,7 +24,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: blog_production
+  database: farmfood_production
   pool: 5
   username: Chris
   password: schweine1
