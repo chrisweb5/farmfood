@@ -380,12 +380,14 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  aws-sdk
   coffee-rails (~> 4.0.0)
   compass
   compass-rails
   globalize3!
   jbuilder (~> 1.2)
   jquery-rails
+  paperclip
   pg
   rails (= 4.0.0)
   rails_12factor
