@@ -8,7 +8,8 @@ Bundler.require(:default, Rails.env)
 
 module Farmfood
   class Application < Rails::Application
-    
+    config.assets.initialize_on_precompile = true# in application.rb.
+
     config.to_prepare do
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
@@ -19,6 +20,7 @@ module Farmfood
       Dir.glob(File.join(File.dirname(__FILE__), "../app/overrides/*.rb")) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
+
     end
 
     # Settings in config/environments/* take precedence over those specified here.
@@ -33,6 +35,6 @@ module Farmfood
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :de
 
-    config.assets.initialize_on_precompile = true in application.rb.
+
   end
 end
