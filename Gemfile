@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-ruby '2.0.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -59,12 +58,12 @@ gem 'globalize3', github: 'svenfuchs/globalize3', branch: 'rails4'
 # gem 'debugger', group: [:development, :test]
 
 gem 'spree', '2.1.1'
+gem "spree_social_products", :git => "git://github.com/spree/spree_social_products.git", :branch => '2-1-stable'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-1-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-1-stable'
 gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-1-stable'
 gem "spree_social", :git => "git://github.com/spree/spree_social.git", :branch => '2-1-stable'
 gem 'spree_i18n', github: 'spree/spree_i18n', :branch => '2-1-stable'
-#gem 'spree_reviews', github: 'spree/spree_reviews', :branch => '2-1-stable'
 
 
 #group :development, :test do
