@@ -64,6 +64,7 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-1-stable'
 gem "spree_social", :git => "git://github.com/spree/spree_social.git", :branch => '2-1-stable'
 gem 'spree_i18n', github: 'spree/spree_i18n', :branch => '2-1-stable'
+gem 'spree_static_content', :github => 'spree/spree_static_content'
 
 
 #group :development, :test do
