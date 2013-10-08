@@ -12,7 +12,6 @@ Farmfood::Application.configure do
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = true #false
-  config.action_view.debug_rjs             = true
   config.action_controller.perform_caching = false #true
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
@@ -75,7 +74,7 @@ Farmfood::Application.configure do
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
-  
+
   # config/environments/production.rb
   config.paperclip_defaults = {
     :storage => :s3,
