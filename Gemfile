@@ -43,7 +43,7 @@ gem 'compass'
 gem 'compass-rails'
 
 #necessary for spree_i18n (translation tool)
-gem 'globalize3', github: 'svenfuchs/globalize3', branch: 'rails4'
+gem 'globalize3', github: 'svenfuchs/globalize3'#, branch: 'rails4'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
