@@ -14,6 +14,9 @@ Farmfood::Application.configure do
   config.consider_all_requests_local       = true #false
   config.action_controller.perform_caching = false #true
 
+  #set host amazon
+  ActionController::Base.asset_host = "http://bucket.s3-eu-west-1.amazonaws.com"
+
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like nginx, varnish or squid.
