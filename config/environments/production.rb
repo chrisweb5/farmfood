@@ -2,7 +2,8 @@ Farmfood::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
-  config.cache_classes = true
+  config.cache_classes = false
+  config.reload_classes_only_on_change = false
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
