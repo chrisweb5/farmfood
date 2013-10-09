@@ -45,6 +45,9 @@ Farmfood::Application.configure do
   # Set to :debug to see everything in the log.
   config.log_level = :info
 
+    # Raise an error on page load if there are pending migrations
+  config.active_record.migration_error = :page_load
+
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
 
