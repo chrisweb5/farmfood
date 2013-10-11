@@ -6,6 +6,18 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
+
+	#change logo
+	config.site_name = "Cawebi"
+	config.logo = "store/logo_50.png"
+	config.admin_interface_logo = 'store/logo_50.jpg'
+	config.currency = "EUR"
+	config.currency_decimal_mark = ","
+	config.currency_thousands_separator = "."
+
+
+
+
   config.use_s3 = true
   config.s3_bucket = ENV['AWS_BUCKET']
   config.s3_access_key = ENV['AWS_ACCESS_KEY_ID']
