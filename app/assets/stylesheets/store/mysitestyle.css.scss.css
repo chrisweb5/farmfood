@@ -1,0 +1,32 @@
+/*------*/
+/* This is in my app/assets/stylesheets/store
+/* It's a work in progress, not wonderful CSS
+/* But at some part it does reformat the cart link
+/*------*/
+/*--------------------------------------*/
+/* Colors
+/*--------------------------------------*/
+$c_brown:       #984807;
+$c_white:       #FFFFFF;
+
+
+body {
+  
+  background-color: $c_white;
+ 
+}
+
+.footer {
+  
+  // background: image-url("store/footer-bg.png") repeat center;
+  background-color: lighten($c_brown, 5);
+  margin-top: 30px;
+  border-top: 5px solid lighten($c_brown, 30);
+  padding-top: 30px;
+  font-size: 14px;
+  line-height: 24px;
+
+  &, a, h5 {
+    color: white;
+     }
+ }
