@@ -76,6 +76,7 @@ gem 'spree_editor', :github => 'spree/spree_editor'
 
 #fix heroku
 gem 'rails_12factor'#, group: :production
+gem "postgres-pr"
 #group :production do
 #  gem 'pg'
 #end

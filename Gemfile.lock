@@ -282,6 +282,7 @@ GEM
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.3)
+    postgres-pr (0.6.3)
     rabl (0.8.4)
       activesupport (>= 2.3.14)
     rack (1.5.2)
@@ -435,6 +436,7 @@ DEPENDENCIES
   paper_trail!
   paperclip
   pg
+  postgres-pr
   rails (= 4.0.0)
   rails_12factor
   sass-rails (~> 4.0.0)
