@@ -1,5 +1,5 @@
 require File.expand_path('../boot', __FILE__)
-require File.expand_path('/app/models/spree/review_sweeper', __FILE__)
+require "./review_sweeper"
 require 'rails/all'
 
 
