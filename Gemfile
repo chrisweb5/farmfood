@@ -58,7 +58,6 @@ gem 'paper_trail', github: 'airblade/paper_trail', branch: 'master'
 
 gem 'appsignal'
 
-
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
