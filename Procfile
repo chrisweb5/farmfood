@@ -1,2 +1,2 @@
-"web: bundle exec rails server -p $PORT"
-"worker: bundle exec rake jobs:work"
+web: bundle exec rackup config.ru -p $PORT -E $RACK_ENV
+worker: bundle exec rake jobs:work
