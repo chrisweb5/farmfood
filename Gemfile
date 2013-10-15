@@ -56,6 +56,8 @@ gem 'paper_trail', github: 'airblade/paper_trail', branch: 'master'
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
+gem 'appsignal'
+
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 

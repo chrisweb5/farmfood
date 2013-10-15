@@ -147,6 +147,10 @@ GEM
     akami (1.2.0)
       gyoku (>= 0.4.0)
       nokogiri (>= 1.4.0)
+    appsignal (0.6.6)
+      json
+      rails (>= 3.0)
+      rake
     arel (4.0.0)
     atomic (1.1.14)
     awesome_nested_set (3.0.0.rc.2)
@@ -426,6 +430,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  appsignal
   aws-sdk
   coffee-rails (~> 4.0.0)
   compass
