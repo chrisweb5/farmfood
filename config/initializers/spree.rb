@@ -1,3 +1,5 @@
+#require for spree_reviews
+require "#{RAILS_ROOT}/vendor/bundle/ruby/1.9.1/bundler/gems/spree_reviews-5447d2231446/app/models/spree/review_sweeper.rb"
 # Configure Spree Preferences
 #
 # Note: Initializing preferences available within the Admin will overwrite any changes that were made through the user interface when you restart.
@@ -14,6 +16,7 @@ Spree.config do |config|
 	config.currency = "EUR"
 	config.currency_decimal_mark = ","
 	config.currency_thousands_separator = "."
+
 
 
 

@@ -31,8 +31,9 @@ module Farmfood
     # config.time_zone = 'Central Time (US & Canada)'
 
     #fix actioncontroller missing initialize sweeper
-    config.autoload_paths += %W( #{Rails.root}/app/models/spree/review_sweeper)
-    config.active_record.observers = [:order_sweeper]
+    #config.autoload_paths += %W( #{Rails.root}/app/models/spree/review_sweeper)
+    #config.active_record.observers = [:order_sweeper]
+    
     #changed to config/initializers/locale.rb
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     #config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
