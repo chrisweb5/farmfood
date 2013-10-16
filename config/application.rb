@@ -10,8 +10,13 @@ Bundler.require(:default, Rails.env)
 
 module Farmfood
   class Application < Rails::Application
-    
+      #to solve uninitialzed constant error    
+    config.autoload_paths << "#{Rails.root}/lib"
+
     config.to_prepare do
+
+      
+
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
