@@ -1,7 +1,9 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+#require 'rails/observers/activerecord/observer' 
 
+    
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -14,6 +16,8 @@ module Farmfood
     config.autoload_paths << "#{Rails.root}/lib"
 
     config.to_prepare do
+
+
 
       
 

@@ -1,6 +1,10 @@
 Farmfood::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  #fix observer
+  config.dependency_loading = true if $rails_rake_task
+  config.active_record.observers = :contact_observer
+
   # Code is not reloaded between requests.
   config.cache_classes = false
   config.reload_classes_only_on_change = false
